@@ -7,8 +7,46 @@
     <link rel="stylesheet" href="top_cat.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Aanapurna/logo.ico" type="image/ico" size="16x16">
+    <script>
+        window.onload=function()
+        {
+            document.getElementById('preloader').style.display="none";
+            document.getElementById('Content').style.display="block";
+        }
+    </script>
+    <style>
+        #preloader
+        {
+            border: 0px solid red;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 600px;
+            height: 600px;
+        }
+        #loader img
+        {
+            width: 600px;
+        }
+        #Content
+        {
+            display: none;
+        }
+        #Content img
+        {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <div id="preloader">
+        <img src="Aanapurna/preloader.gif">
+    </div>
+    <div id="content">
 <!--code for external.css-->    
     <div id="Menu">
         <ul>
@@ -196,6 +234,6 @@
       </div>
     </div>
     <!--end code for footer-->
-    
+    </div>
 </body>
 </html>
